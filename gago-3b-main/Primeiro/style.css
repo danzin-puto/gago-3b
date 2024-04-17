@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap&#39');
-
 :root {
     --cor-de-fundo: #1E1E1E;
-    --verde: #ff0202;
-    --branco: #ffffff;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
     --botao-ativo: #3A375E;
     --botao-inativo: rgba(58, 55, 94, 0.5);
     --texto-fundo: rgba(58, 55, 94, 0.3);
@@ -36,8 +34,9 @@ body {
     color: var(--verde);
 }
 
+
 .botao {
-    font-family: "Crakra Petch", sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -60,8 +59,7 @@ body {
     display: block;
 }
 
-.ativo {
-
+.botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
@@ -87,6 +85,31 @@ body {
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
+}
+
+.contador{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+
+
+
+
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+
 }
 
 @media screen and (min-width: 768px) {
